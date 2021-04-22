@@ -41,7 +41,7 @@ module.exports = {
                         income: user.income,
                         expense: user.expense,
                         transactions: user.transactions,
-                    }, 'SECRET', {expiresIn: '2h'})
+                    }, 'SECRET', { expiresIn: '2h' })
 
                     res.status(200).json({
                         message: 'Login Successful',
