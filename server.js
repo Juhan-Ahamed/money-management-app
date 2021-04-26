@@ -44,3 +44,5 @@ app.listen(PORT, () => {
             console.log('Database Connected...');
         });
 })
+
+//mongodb+srv://${process.env.dbUsername}:${process.env.dbPassword}@cluster0.xcq4x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

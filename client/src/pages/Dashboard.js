@@ -9,7 +9,7 @@ class Dashboard extends React.Component {
     state = {
         createModalOpen: false,
         updateModalOpen: false,
-        id: ''
+        id: '',
     }
 
     openCreateModal = () => {

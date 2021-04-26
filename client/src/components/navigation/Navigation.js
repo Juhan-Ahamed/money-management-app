@@ -13,8 +13,8 @@ class Navigation extends React.Component {
                 <button
                     className="navbar-toggler"
                     type="button"
-                    dataToggle="collapse"
-                    dataTarget="#nav"
+                    data-toggle="collapse"
+                    data-target="#nav"
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
