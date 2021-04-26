@@ -38,13 +38,11 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {
     console.log(`Server is Running on Port ${PORT}`)
-    setTimeout(() => { 
     mongoose.connect(uri,
         { useNewUrlParser: true, useUnifiedTopology: true },
         () => {
-            console.log('Database Connected...');
-        });
-    }, 60000)
+            console.log('Database Connected...')
+        })
 })
 
 //mongodb+srv://${process.env.dbUsername}:${process.env.dbPassword}@cluster0.xcq4x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
