@@ -46,7 +46,7 @@ export const login = (user, history) => dispatch => {
             //dispatch SET USER
         })
         .catch(error => {
-            console.log(error.response.data)
+            //console.log(error.response.data)
             dispatch({
                 type: Types.USERS_ERROR,
                 payload: {

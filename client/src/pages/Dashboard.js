@@ -9,7 +9,7 @@ class Dashboard extends React.Component {
     state = {
         createModalOpen: false,
         updateModalOpen: false,
-        id: '',
+        id: ''
     }
 
     openCreateModal = () => {
@@ -44,6 +44,7 @@ class Dashboard extends React.Component {
 
     render() {
         let { auth, transactions } = this.props
+        const returnedArray = Array.from(transactions)
         return (
             <div className="row">
                 <div className="col-md-8 offset-md-2">
@@ -64,7 +65,7 @@ class Dashboard extends React.Component {
                     <h1>Transactons: </h1>
                     <ul className="list-group" >
                         {
-                            transactions.map(transaction => (
+                            returnedArray.map(transaction => (
                                 <li
                                     key={transaction._id}
                                     className="list-group-item"

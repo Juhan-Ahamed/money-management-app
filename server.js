@@ -41,8 +41,8 @@ app.listen(PORT, () => {
     mongoose.connect(uri,
         { useNewUrlParser: true, useUnifiedTopology: true },
         () => {
-            console.log('Database Connected...');
-        });
+            console.log('Database Connected...')
+        })
 })
 
 //mongodb+srv://${process.env.dbUsername}:${process.env.dbPassword}@cluster0.xcq4x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
