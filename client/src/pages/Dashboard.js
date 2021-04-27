@@ -44,7 +44,7 @@ class Dashboard extends React.Component {
 
     render() {
         let { auth, transactions } = this.props
-        const returnedArray = Array.from(transactions)
+        const transactionsArray = Array.from(transactions)
         return (
             <div className="row">
                 <div className="col-md-8 offset-md-2">
@@ -65,7 +65,7 @@ class Dashboard extends React.Component {
                     <h1>Transactons: </h1>
                     <ul className="list-group" >
                         {
-                            returnedArray.map(transaction => (
+                            transactionsArray.map(transaction => (
                                 <li
                                     key={transaction._id}
                                     className="list-group-item"
