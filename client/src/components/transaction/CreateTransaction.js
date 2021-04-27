@@ -46,6 +46,7 @@ class CreateTransaction extends React.Component {
                 onRequestClose={this.props.close}
                 style={customStyles}
                 contentLabel="Create a New Transaction"
+                ariaHideApp={false}
             >
                 <h2>Create a New Transaction</h2>
                 <form onSubmit={this.submitHandler}>
